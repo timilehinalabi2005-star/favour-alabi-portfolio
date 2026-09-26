@@ -6,6 +6,7 @@ const siteHeader = document.querySelector(".site-header");
 const yearLabel = document.querySelector("#current-year");
 const heroVideo = document.querySelector(".photo-main");
 const videoToggle = document.querySelector(".video-toggle");
+const printCvButton = document.querySelector(".print-cv");
 
 filterButtons.forEach(button => {
     button.addEventListener("click", () => {
@@ -61,6 +62,10 @@ if (siteHeader) {
 
 if (yearLabel) {
     yearLabel.textContent = new Date().getFullYear();
+}
+
+if (printCvButton) {
+    printCvButton.addEventListener("click", () => window.print());
 }
 
 if (heroVideo && videoToggle) {

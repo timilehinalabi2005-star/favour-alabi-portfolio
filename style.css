@@ -1248,6 +1248,33 @@ a {
     background: #e3e9df;
 }
 
+.project-notes {
+    display: grid;
+    gap: 8px;
+    margin-top: 16px;
+    padding-top: 13px;
+    border-top: 1px solid var(--line);
+}
+
+.project-notes > div {
+    display: grid;
+    grid-template-columns: 78px minmax(0, 1fr);
+    gap: 12px;
+}
+
+.project-notes dt {
+    color: var(--signal);
+    font: 8px/1.7 var(--mono);
+    text-transform: uppercase;
+}
+
+.project-notes dd {
+    margin: 0;
+    color: #afbbb1;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
 .project-arrow {
     justify-self: end;
     color: #6b9140;
@@ -1844,6 +1871,183 @@ a {
         border-top-color: var(--line);
         background: #101813;
     }
+
+    .cv-page {
+        width: min(920px, calc(100% - 64px));
+        margin: 0 auto;
+        padding: 38px 0 80px;
+    }
+
+    .cv-toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        margin-bottom: 42px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .cv-back {
+        color: #afbbb1;
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+    .cv-document {
+        max-width: 760px;
+        margin: 0 auto;
+    }
+
+    .cv-heading {
+        padding-bottom: 26px;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .cv-kicker {
+        margin: 0 0 12px;
+        color: var(--signal);
+        font: 9px var(--mono);
+    }
+
+    .cv-heading h1 {
+        margin: 0;
+        color: var(--ink);
+        font-size: 44px;
+        line-height: 1.15;
+    }
+
+    .cv-role {
+        margin: 8px 0 18px;
+        color: #bdc9bd;
+        font-size: 15px;
+    }
+
+    .cv-contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+        color: #a5b2a7;
+        font-size: 10px;
+    }
+
+    .cv-contact a {
+        color: #d1e8a5;
+    }
+
+    .cv-section {
+        margin-top: 26px;
+    }
+
+    .cv-section h2 {
+        margin: 0 0 12px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid var(--line);
+        color: var(--signal);
+        font: 10px var(--mono);
+        text-transform: uppercase;
+    }
+
+    .cv-section p,
+    .cv-section li {
+        color: #c2ccc3;
+        font-size: 11px;
+        line-height: 1.75;
+    }
+
+    .cv-section p {
+        margin: 0;
+    }
+
+    .cv-entry + .cv-entry {
+        margin-top: 15px;
+    }
+
+    .cv-entry h3 {
+        margin: 0;
+        color: var(--ink);
+        font-size: 13px;
+    }
+
+    .cv-entry p + p {
+        margin-top: 3px;
+    }
+
+    .cv-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 5px 30px;
+        margin: 0;
+        padding-left: 17px;
+    }
+
+    @media (max-width: 560px) {
+        .cv-page {
+            width: calc(100% - 36px);
+            padding-top: 22px;
+        }
+
+        .cv-toolbar {
+            margin-bottom: 30px;
+        }
+
+        .cv-heading h1 {
+            font-size: 38px;
+        }
+
+        .cv-list {
+            grid-template-columns: 1fr;
+        }
+
+        .project-notes > div {
+            grid-template-columns: 66px minmax(0, 1fr);
+            gap: 8px;
+        }
+    }
+
+    @media print {
+        @page {
+            size: A4;
+            margin: 16mm;
+        }
+
+        body {
+            background: #fff !important;
+            color: #17231d !important;
+            color-scheme: light;
+        }
+
+        .cv-page {
+            width: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cv-toolbar {
+            display: none;
+        }
+
+        .cv-heading,
+        .cv-section h2 {
+            border-color: #cbd4c9;
+        }
+
+        .cv-heading h1,
+        .cv-entry h3,
+        .cv-role,
+        .cv-section p,
+        .cv-section li,
+        .cv-contact,
+        .cv-contact a {
+            color: #17231d;
+        }
+
+        .cv-kicker,
+        .cv-section h2 {
+            color: #8b3834;
+        }
+    }
+
 
 @media (prefers-reduced-motion: reduce) {
     *,
