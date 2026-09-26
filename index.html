@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Favour Alabi is a cybersecurity student focused on network security, ethical testing, and security awareness.">
+    <meta name="theme-color" content="#0d1410">
+    <title>Favour Alabi | Cybersecurity Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="topbar" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Favour Alabi, home">
+                <span class="brand-mark" aria-hidden="true">FA</span>
+                <span>Favour Alabi<span class="brand-period">.</span></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+                aria-label="Open navigation">
+                <span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="main-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#toolkit">Toolkit</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="hero-inner">
+                <div class="hero-copy" data-reveal>
+                    <p class="eyebrow"><span class="eyebrow-dot"></span> CYBERSECURITY STUDENT <span
+                            class="eyebrow-line"></span> VENITE UNIVERSITY</p>
+                    <p class="hero-greeting">Hello, I'm Favour.</p>
+                    <h1>Curious by nature.<br><span>Security-minded</span> by choice.</h1>
+                    <p class="hero-description">I’m building practical skills in network security, ethical testing, and
+                        vulnerability assessment, one lab at a time.</p>
+                    <div class="hero-actions">
+                        <a class="button button-dark" href="#projects">Explore my work <span
+                                aria-hidden="true">↘</span></a>
+                        <a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <div class="hero-facts">
+                        <div><span class="fact-label">FOCUS</span><strong>Defensive security</strong></div>
+                        <div><span class="fact-label">BASED IN</span><strong>Ado-Ekiti, Nigeria</strong></div>
+                    </div>
+                </div>
+                <div class="hero-visual" data-reveal>
+                    <div class="visual-index"><span>FIELD NOTES</span><span>001 — 026</span></div>
+                    <div class="photo-stage">
+                        <video class="photo-main" autoplay muted loop playsinline preload="metadata"
+                            poster="image/hacker-8033977_1280.jpg"
+                            aria-label="A close-up of code and cybersecurity data on a monitor">
+                            <source src="https://www.pexels.com/download/video/6963744/" type="video/mp4">
+                        </video>
+                        <img class="photo-inset" src="image/cybersecurity%202.jpg"
+                            alt="A second cybersecurity-themed image">
+                        <div class="photo-tag"><span class="tag-cross"
+                                aria-hidden="true">+</span><span>LEARN<br>TEST<br>DEFEND</span></div>
+                        <div class="video-controls">
+                            <button class="video-toggle" type="button" aria-label="Pause cybersecurity video">
+                                Pause video</button>
+                        </div>
+                    </div>
+                    <div class="visual-caption"><span>01 / NETWORKS</span><span>02 / PEOPLE</span><span>03 /
+                            SYSTEMS</span></div>
+                </div>
+            </div>
+            <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-rule"></span><span>01 — 06</span>
+            </div>
+        </section>
+
+        <section class="intro-section section-wrap" id="about">
+            <div class="section-kicker"><span>01</span><span>THE PERSON BEHIND THE PACKETS</span></div>
+            <div class="intro-layout">
+                <h2>Learning how things work is how I learn to protect them.</h2>
+                <div class="intro-copy">
+                    <p>I’m a cybersecurity undergraduate at Venite University, interested in the practical work of
+                        understanding systems and making them more secure.</p>
+                    <p>My learning so far has included hands-on time with Kali Linux, Nmap, Wireshark, GoPhish, and
+                        Python, alongside an internship at Kinplus Technology.</p>
+                    <a class="inline-link" href="#experience">A little more about my journey <span
+                            aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <div class="focus-strip" aria-label="Areas of focus">
+                <div><span class="focus-number">A</span><span>Network<br>security</span></div>
+                <div><span class="focus-number">B</span><span>Ethical<br>testing</span></div>
+                <div><span class="focus-number">C</span><span>Security<br>awareness</span></div>
+                <div><span class="focus-number">D</span><span>Python<br>scripting</span></div>
+            </div>
+        </section>
+
+        <section class="toolkit-section" id="toolkit">
+            <div class="section-wrap toolkit-wrap">
+                <div class="section-kicker section-kicker-light"><span>02</span><span>TOOLS I USE & WANT TO
+                        EXPLORE</span></div>
+                <div class="toolkit-heading">
+                    <div>
+                        <p class="eyebrow eyebrow-light">THE WORKBENCH</p>
+                        <h2>A growing security toolkit.</h2>
+                    </div>
+                    <p>Tools are only as useful as the care and permission behind them. I use security tools in learning
+                        environments and authorized labs.</p>
+                </div>
+                <div class="toolkit-controls" role="group" aria-label="Filter toolkit by type">
+                    <button class="filter-button is-selected" type="button" data-filter="all"
+                        aria-pressed="true">Everything <span>11</span></button>
+                    <button class="filter-button" type="button" data-filter="software" aria-pressed="false">Software
+                        <span>7</span></button>
+                    <button class="filter-button" type="button" data-filter="hardware" aria-pressed="false">Hardware
+                        <span>4</span></button>
+                    <span class="toolkit-note"><span class="status-dot"></span> IN USE &amp; ON MY LEARNING LIST</span>
+                </div>
+                <div class="tool-grid">
+                    <article class="tool-card" data-category="software" data-status="in use">
+                        <div class="tool-card-top"><span class="tool-code">SW / 01</span><span class="tool-status">IN
+                                USE</span></div>
+                        <h3>Kali Linux</h3>
+                        <p>A Linux environment for learning and practicing security workflows.</p><span
+                            class="tool-type">OPERATING SYSTEM</span>
+                    </article>
+                    <article class="tool-card" data-category="software" data-status="in use">
+                        <div class="tool-card-top"><span class="tool-code">SW / 02</span><span class="tool-status">IN
+                                USE</span></div>
+                        <h3>Nmap</h3>
+                        <p>Network discovery and service enumeration in controlled lab environments.</p><span
+                            class="tool-type">NETWORK SCANNER</span>
+                    </article>
+                    <article class="tool-card" data-category="software" data-status="in use">
+                        <div class="tool-card-top"><span class="tool-code">SW / 03</span><span class="tool-status">IN
+                                USE</span></div>
+                        <h3>Wireshark</h3>
+                        <p>Inspecting network traffic to understand protocols and spot unusual behavior.</p><span
+                            class="tool-type">PACKET ANALYSIS</span>
+                    </article>
+                    <article class="tool-card" data-category="software" data-status="in use">
+                        <div class="tool-card-top"><span class="tool-code">SW / 04</span><span class="tool-status">IN
+                                USE</span></div>
+                        <h3>GoPhish</h3>
+                        <p>Learning how ethical phishing simulations can strengthen awareness.</p><span
+                            class="tool-type">AWARENESS TRAINING</span>
+                    </article>
+                    <article class="tool-card" data-category="software" data-status="in use">
+                        <div class="tool-card-top"><span class="tool-code">SW / 05</span><span class="tool-status">IN
+                                USE</span></div>
+                        <h3>Python</h3>
+                        <p>Building a foundation in scripting and small security-focused automations.</p><span
+                            class="tool-type">PROGRAMMING</span>
+                    </article>
+                    <article class="tool-card" data-category="software" data-status="exploring">
+                        <div class="tool-card-top"><span class="tool-code">SW / 06</span><span
+                                class="tool-status is-exploring">EXPLORING</span></div>
+                        <h3>Burp Suite</h3>
+                        <p>A web security testing toolkit to explore with intentionally vulnerable labs.</p><span
+                            class="tool-type">WEB SECURITY</span>
+                    </article>
+                    <article class="tool-card" data-category="software" data-status="exploring">
+                        <div class="tool-card-top"><span class="tool-code">SW / 07</span><span
+                                class="tool-status is-exploring">EXPLORING</span></div>
+                        <h3>OWASP ZAP</h3>
+                        <p>An open-source web app scanner for authorized training targets.</p><span
+                            class="tool-type">WEB SECURITY</span>
+                    </article>
+                    <article class="tool-card hardware-card" data-category="hardware" data-status="exploring">
+                        <div class="tool-card-top"><span class="tool-code">HW / 01</span><span
+                                class="tool-status is-exploring">ON MY LIST</span></div>
+                        <h3>Raspberry Pi</h3>
+                        <p>A compact computer for building an isolated home security lab.</p><span class="tool-type">LAB
+                            COMPUTER</span>
+                    </article>
+                    <article class="tool-card hardware-card" data-category="hardware" data-status="exploring">
+                        <div class="tool-card-top"><span class="tool-code">HW / 02</span><span
+                                class="tool-status is-exploring">ON MY LIST</span></div>
+                        <h3>Security key</h3>
+                        <p>Hardware-backed multi-factor authentication for stronger account security.</p><span
+                            class="tool-type">YUBIKEY / FIDO2</span>
+                    </article>
+                    <article class="tool-card hardware-card" data-category="hardware" data-status="exploring">
+                        <div class="tool-card-top"><span class="tool-code">HW / 03</span><span
+                                class="tool-status is-exploring">ON MY LIST</span></div>
+                        <h3>Wi-Fi adapter</h3>
+                        <p>A monitor-mode capable adapter for controlled wireless lab exercises.</p><span
+                            class="tool-type">WIRELESS LAB</span>
+                    </article>
+                    <article class="tool-card hardware-card" data-category="hardware" data-status="exploring">
+                        <div class="tool-card-top"><span class="tool-code">HW / 04</span><span
+                                class="tool-status is-exploring">ON MY LIST</span></div>
+                        <h3>Flipper Zero</h3>
+                        <p>A portable device for learning about radio protocols with equipment you own or are authorized
+                            to test.</p><span class="tool-type">RF / NFC LEARNING</span>
+                    </article>
+                </div>
+                <p class="toolkit-footnote">Hardware shown as areas of interest, not a claim of ownership. Always test
+                    only with explicit permission.</p>
+            </div>
+        </section>
+
+        <section class="gallery-section section-wrap" id="gallery">
+            <div class="section-kicker"><span>03</span><span>CYBERSECURITY IN FOCUS</span></div>
+            <div class="gallery-heading">
+                <h2>Inside the connected world.</h2>
+                <p>From the hardware at the edge to the infrastructure carrying our data, security touches every layer.
+                </p>
+            </div>
+            <div class="photo-gallery">
+                <figure class="gallery-item">
+                    <img src="image/network-hardware.jpg" alt="Close-up view of electronic network hardware"
+                        loading="lazy" decoding="async">
+                    <figcaption><span>01 / HARDWARE</span><strong>Under the surface</strong></figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="image/server-room.jpg" alt="Server racks inside a data center" loading="lazy"
+                        decoding="async">
+                    <figcaption><span>02 / INFRASTRUCTURE</span><strong>Where data lives</strong></figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="image/cybersecurity-lab.jpg" alt="Cybersecurity-themed digital scene" loading="lazy"
+                        decoding="async">
+                    <figcaption><span>03 / DEFENSE</span><strong>Protecting the signal</strong></figcaption>
+                </figure>
+            </div>
+            <p class="gallery-credit">Additional photography via <a href="https://unsplash.com/license" target="_blank"
+                    rel="noopener noreferrer">Unsplash</a>.</p>
+        </section>
+
+        <section class="projects-section section-wrap" id="projects">
+            <div class="section-kicker"><span>04</span><span>SELECTED PRACTICE</span></div>
+            <div class="section-heading-row">
+                <h2>Learning by doing.</h2>
+                <p>Small, scoped exercises that turn curiosity into repeatable skills.</p>
+            </div>
+            <div class="project-list">
+                <article class="project-row">
+                    <span class="project-index">01</span>
+                    <div class="project-main">
+                        <div class="project-title-line">
+                            <h3>Personal vulnerability scanner</h3><span class="project-label">PERSONAL PROJECT</span>
+                        </div>
+                        <p>A Python and Nmap project concept for identifying open ports and reviewing exposed services
+                            on systems in my own lab.</p>
+                        <div class="project-tags"><span>PYTHON</span><span>NMAP</span><span>NETWORK SECURITY</span>
+                        </div>
+                    </div><span class="project-arrow" aria-hidden="true">↗</span>
+                </article>
+                <article class="project-row">
+                    <span class="project-index">02</span>
+                    <div class="project-main">
+                        <div class="project-title-line">
+                            <h3>Network reconnaissance practice</h3><span class="project-label">HANDS-ON PRACTICE</span>
+                        </div>
+                        <p>Using Nmap in controlled environments to map services, understand scan results, and document
+                            findings clearly.</p>
+                        <div class="project-tags"><span>NMAP</span><span>LAB
+                                ENVIRONMENT</span><span>DOCUMENTATION</span></div>
+                    </div><span class="project-arrow" aria-hidden="true">↗</span>
+                </article>
+                <article class="project-row">
+                    <span class="project-index">03</span>
+                    <div class="project-main">
+                        <div class="project-title-line">
+                            <h3>Packet analysis &amp; awareness</h3><span class="project-label">LEARNING TRACK</span>
+                        </div>
+                        <p>Building familiarity with traffic analysis and ethical phishing simulations to support better
+                            security awareness.</p>
+                        <div class="project-tags"><span>WIRESHARK</span><span>GOPHISH</span><span>DEFENSE</span></div>
+                    </div><span class="project-arrow" aria-hidden="true">↗</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="experience-section" id="experience">
+            <div class="section-wrap experience-wrap">
+                <div class="section-kicker section-kicker-light"><span>05</span><span>EXPERIENCE &amp; EDUCATION</span>
+                </div>
+                <div class="experience-layout">
+                    <div class="experience-heading">
+                        <p class="eyebrow eyebrow-light">THE LEARNING PATH</p>
+                        <h2>Every good analyst starts by asking better questions.</h2>
+                    </div>
+                    <div class="timeline">
+                        <article class="timeline-entry"><span class="timeline-date">INTERNSHIP</span>
+                            <div>
+                                <h3>Cybersecurity Intern</h3>
+                                <p class="timeline-place">Kinplus Technology</p>
+                                <p>Gained practical exposure to Kali Linux, Nmap scanning, GoPhish simulations, and
+                                    Wireshark traffic analysis.</p>
+                            </div>
+                        </article>
+                        <article class="timeline-entry"><span class="timeline-date">UNDERGRADUATE</span>
+                            <div>
+                                <h3>Cybersecurity</h3>
+                                <p class="timeline-place">Venite University</p>
+                                <p>Developing a foundation in cybersecurity, network defense, and security tools.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section-wrap" id="contact">
+            <div class="section-kicker"><span>06</span><span>OPEN CHANNEL</span></div>
+            <div class="contact-layout">
+                <div>
+                    <p class="eyebrow">LET'S CONNECT</p>
+                    <h2>Good security starts with a conversation.</h2>
+                </div>
+                <div class="contact-details">
+                    <p>Interested in cybersecurity, learning opportunities, or sharing ideas? Send me a note.</p><a
+                        class="email-link" href="mailto:megafavourtimi@gmail.com">megafavourtimi@gmail.com <span
+                            aria-hidden="true">↗</span></a>
+                    <div class="social-links"><a href="https://www.linkedin.com/in/favour-alabi-361a90439/"
+                            target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a
+                            href="https://github.com/timilehinalabi2005" target="_blank"
+                            rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><span>Ado-Ekiti,
+                            Nigeria</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark"
+                aria-hidden="true">FA</span><span>Favour Alabi<span class="brand-period">.</span></span></a>
+        <p>Learning to make the digital world a little safer.</p><span class="copyright">© <span
+                id="current-year">2026</span> FAVOUR ALABI</span>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
